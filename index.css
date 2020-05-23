@@ -1,7 +1,7 @@
 
- .slides { width: 100%; height:100%  }
+ .slides { width: 100%; }
  .slides-hidden { display : none; }
- .g-slides { width: 100%; height:150% }
+ .g-slides { width: 100%;  }
  .g-slides-hidden { display : none; }
 
 
