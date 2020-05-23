@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+		<meta http-equiv = 'cache-control' content = 'no-cache'>
+		<meta http-equiv = 'expires' content = '0'>
+		<meta http-equiv = 'pragma' content = 'no-cache' >
+   	 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<title> MahadevaMart </title>
+</head>
+<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-success ">
+  			<a class="navbar-brand" href="index.html">MahadevaMart</a>
+		</nav>	
+
+
+<section class=perfect>
+    <img class="g-slides g-slides-hidden" src="images/arisina-kumkuma.jpg">
+    <img class="g-slides g-slides-hidden" src="images/pooja-items.jpg">
+    <img class="g-slides g-slides-hidden" src="images/yelakki.jpg">
+</section>
+
+<section class=perfect>
+    <img  style=height:330px; class="slides slides-hidden" src="images/fruits.jpg">
+    <img  style=height:330px; class="slides slides-hidden" src="images/fruits1.jpg">
+    <img  style=height:330px; class="slides slides-hidden" src="images/coconut.jpeg">
+</section>
+
+				
+			<div class=card-img-overlay>
+			<section class="spinner">
+				  <section class="dot1"></section>
+				  <section class="dot2"></section>
+			</section>	    
+			<h1 class="ml4">
+				  <span class="letters letters-1">We</span>
+				  <span class="letters letters-2">Are</span>
+				  <span class="letters letters-3">Coming</span>
+				  <span class="letters letters-4">Soon</span>
+				  <span class="letters letters-5">To</span>
+				  <span class="letters letters-6">Serve</span>
+				  <span class="letters letters-7">Digitally!</span>
+			</h1>
+			<br>
+			<br>
+			<br>
+			<br>
+			<section class="spinner">
+				  <section class="dot1"></section>
+				  <section class="dot2"></section>
+			</section>	     
+			</div>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+			<script type="text/javascript" src="main.js" ></script>
+			
+			<script>
+
+			    addEventListener("load",() => { // "load" is safe but "DOMContentLoaded" starts earlier
+			        var index = 0;
+			        const slides = document.querySelectorAll(".slides");
+			        const classHide = "slides-hidden", count = slides.length;
+			        nextSlide();
+			        function nextSlide() {
+			            slides[(index ++) % count].classList.add(classHide);
+			            slides[index % count].classList.remove(classHide);
+			            setTimeout(nextSlide, 3000);
+			        }
+			    });
+
+		
+			    addEventListener("load",() => { // "load" is safe but "DOMContentLoaded" starts earlier
+			        var index = 0;
+			        const slides = document.querySelectorAll(".g-slides");
+			        const classHide = "g-slides-hidden", count = slides.length;
+			        nextSlide();
+			        function nextSlide() {
+			            slides[(index ++) % count].classList.add(classHide);
+			            slides[index % count].classList.remove(classHide);
+			            setTimeout(nextSlide, 3000);
+			        }
+			    });
+			</script>
+   </body>
+</html>
